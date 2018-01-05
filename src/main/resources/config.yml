@@ -7,7 +7,7 @@ channels:
   global:
     format: '§f<{1}§r§f>: {2}'
   message-sent-msg: Message sent.
-  minimum-score-no-send: 30
+  minimum-score-no-send: 50
   partially-offensive: 0.75
 zones:
     chat:
@@ -38,10 +38,11 @@ filters:
               level: 10.0
         whitelist:
             - "oc.tc"
-            - "i.oc.tc"
             - "twitch.tv"
             - "hitbox.tv"
             - "twitter.com"
+            - "youtube.com"
+            - "zildith.net"
     leet:
         default-level: 2
         priority: 5
@@ -70,84 +71,80 @@ filters:
                 expression: "\\b(%WHOLE)\\b"
                 default: false
         words:
+            "nigger":
+                level: 55
             "fuck":
-                level: 30
+                level: 10
             "motherfuck":
-                level: 30
-            "mofo":
-                level: 30
-            "nigger|nigga|niqqa":
-                level: 30
+                level: 10
             "cunt":
-                level: 25
+                level: 15
             "fag":
-                level: 25
+                level: 15
             "faggot|queer":
-                level: 25
+                level: 15
             "cock":
-                level: 22
+                level: 10
             "erection":
-                level: 20
+                level: 5
             "dick":
-                level: 20
+                level: 10
             "bastard|basterd":
-                level: 20
+                level: 5
             "penis":
-                level: 20
+                level: 5
             "pussy":
-                level: 20
+                level: 10
             "poon":
-                level: 20
+                level: 10
             "whore":
-                level: 20
+                level: 10
             "ejaculate|ejaculat":
-                level: 20
+                level: 6
             "anus|arse":
                 template: tmp3
-                level: 15
+                level: 3
             "bitch":
-                level: 15
+                level: 10
             "slut":
-                level: 15
+                level: 6
             "wank":
-                level: 15
+                level: 16
             "clit":
-                level: 15
+                level: 10
             "anal":
-                level: 15
+                level: 10
                 template: tmp3
             "goatse":
-                level: 14
+                level: 6
             "bukake":
-                level: 14
+                level: 6
             "dildo":
-                level: 13
+                level: 6
             "skeet":
-                level: 13
+                level: 6
             "clit":
-                level: 13
+                level: 6
             "tits":
-                level: 12
+                level: 5
             "twat":
-                level: 12
+                level: 6
             "titties":
-                level: 12
+                level: 5
             "ass|asshole|assface|badass":
-                level: 10
+                level: 4
                 template: tmp3
             "boner":
-                level: 10
+                level: 4
             "douche":
-                level: 10
+                level: 5
             "shit":
-                level: 10
-            "weed":
-                level: 10
+                level: 5
             "masturbate|masterbate":
-                level: 10
+                level: 6
             "porn":
-                level: 10
+                level: 4
             "blowjob":
-                level: 10
+                level: 4
             "piss":
-                level: 7
+                level: 1
